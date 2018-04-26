@@ -47650,7 +47650,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.center[data-v-85ef4954] {\r\n    margin: auto;\r\n    width: 50%;\r\n    border: 2px solid black;\r\n    padding: 5px 5px;\r\n    text-align: center;\n}\n.table[data-v-85ef4954], th[data-v-85ef4954] {\r\n  border: none;\r\n  text-align: center;\n}\n.mano[data-v-85ef4954] {\r\n  padding-top: 100px;\n}\n.btn-lg[data-v-85ef4954] {\r\n  width: 100%;\n}\n.modal-footer[data-v-85ef4954] {\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\n}\r\n", ""]);
+exports.push([module.i, "\n.center[data-v-85ef4954] {\r\n    margin: auto;\r\n    width: 50%;\r\n    border: 2px solid black;\r\n    padding: 5px 5px;\r\n    text-align: center;\n}\n.table[data-v-85ef4954], th[data-v-85ef4954] {\r\n  border: none;\r\n  text-align: center;\n}\n.mano[data-v-85ef4954] {\r\n  padding-top: 100px;\n}\n.btn-lg[data-v-85ef4954] {\r\n  width: 150px;\n}\n.modal-content .btn-lg[data-v-85ef4954] {\r\n  width: 100%;\n}\n.modal-footer[data-v-85ef4954] {\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\n}\r\n", ""]);
 
 // exports
 

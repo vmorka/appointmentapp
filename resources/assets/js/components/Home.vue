@@ -122,6 +122,10 @@
 }
 
 .btn-lg {
+  width: 150px;
+}
+
+.modal-content .btn-lg {
   width: 100%;
 }
 
