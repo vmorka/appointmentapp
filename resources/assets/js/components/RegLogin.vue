@@ -128,7 +128,6 @@
         </div>
       </div>
     </div>
-    <home></home>
   </div>
 </template>
 

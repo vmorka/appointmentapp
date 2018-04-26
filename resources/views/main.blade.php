@@ -1,5 +1,5 @@
 @extends("layouts.app")
 
 @section("content")
-  <reg-login></reg-login>
+  <home></home>
 @endsection

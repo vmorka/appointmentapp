@@ -14292,13 +14292,14 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(16);
-module.exports = __webpack_require__(73);
+module.exports = __webpack_require__(78);
 
 
 /***/ }),
 /* 16 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -47650,7 +47651,7 @@ exports = module.exports = __webpack_require__(1)(false);
 
 
 // module
-exports.push([module.i, "\n.center[data-v-85ef4954] {\r\n    margin: auto;\r\n    width: 50%;\r\n    border: 2px solid black;\r\n    padding: 5px 5px;\r\n    text-align: center;\n}\n.table[data-v-85ef4954], th[data-v-85ef4954] {\r\n  border: none;\r\n  text-align: center;\n}\n.mano[data-v-85ef4954] {\r\n  padding-top: 100px;\n}\n.btn-lg[data-v-85ef4954] {\r\n  width: 150px;\n}\n.modal-content .btn-lg[data-v-85ef4954] {\r\n  width: 100%;\n}\n.modal-footer[data-v-85ef4954] {\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\n}\r\n", ""]);
+exports.push([module.i, "\n.center[data-v-85ef4954] {\r\n    margin: auto;\r\n    width: 50%;\r\n    border: 2px solid black;\r\n    padding: 5px 5px;\r\n    text-align: center;\n}\n.table[data-v-85ef4954], th[data-v-85ef4954] {\r\n  border: none;\r\n  text-align: center;\n}\n.mano[data-v-85ef4954] {\r\n  padding-top: 100px;\n}\n.btn-lg[data-v-85ef4954] {\r\n  width: 200px;\n}\n.modal-content .btn-lg[data-v-85ef4954] {\r\n  width: 100%;\n}\n.modal-footer[data-v-85ef4954] {\r\n  -webkit-box-pack: center;\r\n      -ms-flex-pack: center;\r\n          justify-content: center;\n}\r\n", ""]);
 
 // exports
 
@@ -47794,6 +47795,7 @@ module.exports = function listToStyles (parentId, list) {
 //
 //
 //
+//
 
 /***/ }),
 /* 47 */
@@ -47803,7 +47805,18 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    { staticClass: "mano" },
+    [
+      _c("reg-login"),
+      _vm._v(" "),
+      _c("h1", { staticClass: "center" }, [_vm._v("Appointment App")]),
+      _vm._v(" "),
+      _vm._m(0)
+    ],
+    1
+  )
 }
 var staticRenderFns = [
   function() {
@@ -47811,238 +47824,234 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "mano" }, [
-      _c("h1", { staticClass: "center" }, [_vm._v("Appointment App")]),
+      _c(
+        "div",
+        { staticClass: "modal fade", attrs: { id: "aCity", role: "dialog" } },
+        [
+          _c("div", { staticClass: "modal-dialog" }, [
+            _c("div", { staticClass: "modal-content" }, [
+              _c("div", { staticClass: "modal-header" }, [
+                _c("h4", { staticClass: "modal-title" }, [
+                  _vm._v("Pasirinkite miestą")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "close",
+                    attrs: { type: "button", "data-dismiss": "modal" }
+                  },
+                  [_vm._v("×")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-body" }, [
+                _c("div", { staticClass: "checkbox" }, [
+                  _c("label", [
+                    _c("input", { attrs: { type: "checkbox", value: "" } }),
+                    _vm._v(" Panevėžys")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "checkbox" }, [
+                  _c("label", [
+                    _c("input", { attrs: { type: "checkbox", value: "" } }),
+                    _vm._v(" Kaunas")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "checkbox" }, [
+                  _c("label", [
+                    _c("input", { attrs: { type: "checkbox", value: "" } }),
+                    _vm._v(" Vilnius")
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-footer" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-info btn-lg",
+                    attrs: { type: "button", "data-dismiss": "modal" }
+                  },
+                  [_vm._v("Ieškoti")]
+                )
+              ])
+            ])
+          ])
+        ]
+      ),
       _vm._v(" "),
-      _c("div", { staticClass: "mano" }, [
-        _c(
-          "div",
-          { staticClass: "modal fade", attrs: { id: "aCity", role: "dialog" } },
-          [
-            _c("div", { staticClass: "modal-dialog" }, [
-              _c("div", { staticClass: "modal-content" }, [
-                _c("div", { staticClass: "modal-header" }, [
-                  _c("h4", { staticClass: "modal-title" }, [
-                    _vm._v("Pasirinkite miestą")
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "close",
-                      attrs: { type: "button", "data-dismiss": "modal" }
-                    },
-                    [_vm._v("×")]
-                  )
+      _c(
+        "div",
+        {
+          staticClass: "modal fade",
+          attrs: { id: "aService", role: "dialog" }
+        },
+        [
+          _c("div", { staticClass: "modal-dialog" }, [
+            _c("div", { staticClass: "modal-content" }, [
+              _c("div", { staticClass: "modal-header" }, [
+                _c("h4", { staticClass: "modal-title" }, [
+                  _vm._v("Pasirinkite paslaugą")
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "modal-body" }, [
-                  _c("div", { staticClass: "checkbox" }, [
-                    _c("label", [
-                      _c("input", { attrs: { type: "checkbox", value: "" } }),
-                      _vm._v(" Panevėžys")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "checkbox" }, [
-                    _c("label", [
-                      _c("input", { attrs: { type: "checkbox", value: "" } }),
-                      _vm._v(" Kaunas")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "checkbox" }, [
-                    _c("label", [
-                      _c("input", { attrs: { type: "checkbox", value: "" } }),
-                      _vm._v(" Vilnius")
-                    ])
+                _c(
+                  "button",
+                  {
+                    staticClass: "close",
+                    attrs: { type: "button", "data-dismiss": "modal" }
+                  },
+                  [_vm._v("×")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-body" }, [
+                _c("div", { staticClass: "checkbox" }, [
+                  _c("label", [
+                    _c("input", { attrs: { type: "checkbox", value: "" } }),
+                    _vm._v(" Odontologija")
                   ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "modal-footer" }, [
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-info btn-lg",
-                      attrs: { type: "button", "data-dismiss": "modal" }
-                    },
-                    [_vm._v("Ieškoti")]
-                  )
-                ])
-              ])
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "modal fade",
-            attrs: { id: "aService", role: "dialog" }
-          },
-          [
-            _c("div", { staticClass: "modal-dialog" }, [
-              _c("div", { staticClass: "modal-content" }, [
-                _c("div", { staticClass: "modal-header" }, [
-                  _c("h4", { staticClass: "modal-title" }, [
-                    _vm._v("Pasirinkite paslaugą")
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "close",
-                      attrs: { type: "button", "data-dismiss": "modal" }
-                    },
-                    [_vm._v("×")]
-                  )
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "modal-body" }, [
-                  _c("div", { staticClass: "checkbox" }, [
-                    _c("label", [
-                      _c("input", { attrs: { type: "checkbox", value: "" } }),
-                      _vm._v(" Odontologija")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "checkbox" }, [
-                    _c("label", [
-                      _c("input", { attrs: { type: "checkbox", value: "" } }),
-                      _vm._v(" Manikiūras")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "checkbox" }, [
-                    _c("label", [
-                      _c("input", { attrs: { type: "checkbox", value: "" } }),
-                      _vm._v(" Masažas")
-                    ])
+                _c("div", { staticClass: "checkbox" }, [
+                  _c("label", [
+                    _c("input", { attrs: { type: "checkbox", value: "" } }),
+                    _vm._v(" Manikiūras")
                   ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "modal-footer" }, [
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-info btn-lg",
-                      attrs: { type: "button", "data-dismiss": "modal" }
-                    },
-                    [_vm._v("Ieškoti")]
-                  )
+                _c("div", { staticClass: "checkbox" }, [
+                  _c("label", [
+                    _c("input", { attrs: { type: "checkbox", value: "" } }),
+                    _vm._v(" Masažas")
+                  ])
                 ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-footer" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-info btn-lg",
+                    attrs: { type: "button", "data-dismiss": "modal" }
+                  },
+                  [_vm._v("Ieškoti")]
+                )
               ])
             ])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "modal fade",
-            attrs: { id: "aSpecialist", role: "dialog" }
-          },
-          [
-            _c("div", { staticClass: "modal-dialog" }, [
-              _c("div", { staticClass: "modal-content" }, [
-                _c("div", { staticClass: "modal-header" }, [
-                  _c("h4", { staticClass: "modal-title" }, [
-                    _vm._v("Pasirinkite specialistą")
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "button",
-                    {
-                      staticClass: "close",
-                      attrs: { type: "button", "data-dismiss": "modal" }
-                    },
-                    [_vm._v("×")]
-                  )
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "modal fade",
+          attrs: { id: "aSpecialist", role: "dialog" }
+        },
+        [
+          _c("div", { staticClass: "modal-dialog" }, [
+            _c("div", { staticClass: "modal-content" }, [
+              _c("div", { staticClass: "modal-header" }, [
+                _c("h4", { staticClass: "modal-title" }, [
+                  _vm._v("Pasirinkite specialistą")
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "modal-body" }, [
-                  _c("div", { staticClass: "checkbox" }, [
-                    _c("label", [
-                      _c("input", { attrs: { type: "checkbox", value: "" } }),
-                      _vm._v(" Odontologas")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "checkbox" }, [
-                    _c("label", [
-                      _c("input", { attrs: { type: "checkbox", value: "" } }),
-                      _vm._v(" Visažistė")
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "checkbox" }, [
-                    _c("label", [
-                      _c("input", { attrs: { type: "checkbox", value: "" } }),
-                      _vm._v(" Masažistas")
-                    ])
+                _c(
+                  "button",
+                  {
+                    staticClass: "close",
+                    attrs: { type: "button", "data-dismiss": "modal" }
+                  },
+                  [_vm._v("×")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-body" }, [
+                _c("div", { staticClass: "checkbox" }, [
+                  _c("label", [
+                    _c("input", { attrs: { type: "checkbox", value: "" } }),
+                    _vm._v(" Odontologas")
                   ])
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "modal-footer" }, [
-                  _c(
-                    "button",
-                    {
-                      staticClass: "btn btn-info btn-lg",
-                      attrs: { type: "button", "data-dismiss": "modal" }
-                    },
-                    [_vm._v("Ieškoti")]
-                  )
+                _c("div", { staticClass: "checkbox" }, [
+                  _c("label", [
+                    _c("input", { attrs: { type: "checkbox", value: "" } }),
+                    _vm._v(" Visažistė")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "checkbox" }, [
+                  _c("label", [
+                    _c("input", { attrs: { type: "checkbox", value: "" } }),
+                    _vm._v(" Masažistas")
+                  ])
                 ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-footer" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-info btn-lg",
+                    attrs: { type: "button", "data-dismiss": "modal" }
+                  },
+                  [_vm._v("Ieškoti")]
+                )
               ])
             ])
-          ]
-        ),
-        _vm._v(" "),
-        _c("table", { staticClass: "table" }, [
-          _c("tr", [
-            _c("th", [
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-info btn-lg",
-                  attrs: {
-                    type: "button",
-                    "data-toggle": "modal",
-                    "data-target": "#aCity"
-                  }
-                },
-                [_vm._v("Miestas")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("th", [
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-info btn-lg",
-                  attrs: {
-                    type: "button",
-                    "data-toggle": "modal",
-                    "data-target": "#aService"
-                  }
-                },
-                [_vm._v("Paslauga")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("th", [
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-info btn-lg",
-                  attrs: {
-                    type: "button",
-                    "data-toggle": "modal",
-                    "data-target": "#aSpecialist"
-                  }
-                },
-                [_vm._v("Specialistas")]
-              )
-            ])
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c("table", { staticClass: "table" }, [
+        _c("tr", [
+          _c("th", [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-info btn-lg",
+                attrs: {
+                  type: "button",
+                  "data-toggle": "modal",
+                  "data-target": "#aCity"
+                }
+              },
+              [_vm._v("Miestas")]
+            )
+          ]),
+          _vm._v(" "),
+          _c("th", [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-info btn-lg",
+                attrs: {
+                  type: "button",
+                  "data-toggle": "modal",
+                  "data-target": "#aService"
+                }
+              },
+              [_vm._v("Paslauga")]
+            )
+          ]),
+          _vm._v(" "),
+          _c("th", [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-info btn-lg",
+                attrs: {
+                  type: "button",
+                  "data-toggle": "modal",
+                  "data-target": "#aSpecialist"
+                }
+              },
+              [_vm._v("Specialistas")]
+            )
           ])
         ])
       ])
@@ -48286,7 +48295,6 @@ exports.push([module.i, "\n.dropdown-menu[data-v-7a83072c] {\r\n  padding: 0;\r\
 //
 //
 //
-//
 
 /***/ }),
 /* 52 */
@@ -48296,441 +48304,411 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    [
-      _vm._m(0),
-      _vm._v(" "),
-      _vm._m(1),
-      _vm._v(" "),
-      _vm._m(2),
-      _vm._v(" "),
-      _vm._m(3),
-      _vm._v(" "),
-      _vm._m(4),
-      _vm._v(" "),
-      _c("home")
-    ],
-    1
-  )
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "dropdown reg-right" }, [
+    return _c("div", [
+      _c("div", { staticClass: "dropdown reg-right" }, [
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-info btn-lg dropdown-toggle",
+            attrs: { type: "button", "data-toggle": "dropdown" }
+          },
+          [_vm._v("Registracija\n    "), _c("span", { staticClass: "caret" })]
+        ),
+        _vm._v(" "),
+        _c("ul", { staticClass: "dropdown-menu" }, [
+          _c("li", [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-info btn-lg",
+                attrs: {
+                  type: "button",
+                  "data-toggle": "modal",
+                  "data-target": "#regUser"
+                }
+              },
+              [_vm._v("Registracija vartotojui")]
+            )
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-info btn-lg",
+                attrs: {
+                  type: "button",
+                  "data-toggle": "modal",
+                  "data-target": "#regCompany"
+                }
+              },
+              [_vm._v("Registracija įmonei")]
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "login-right" }, [
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-info btn-lg",
+            attrs: {
+              type: "button",
+              "data-toggle": "modal",
+              "data-target": "#login"
+            }
+          },
+          [_vm._v("Prisijungti")]
+        )
+      ]),
+      _vm._v(" "),
       _c(
-        "button",
-        {
-          staticClass: "btn btn-info btn-lg dropdown-toggle",
-          attrs: { type: "button", "data-toggle": "dropdown" }
-        },
-        [_vm._v("Registracija\n    "), _c("span", { staticClass: "caret" })]
+        "div",
+        { staticClass: "modal fade", attrs: { id: "regUser", role: "dialog" } },
+        [
+          _c("div", { staticClass: "modal-dialog" }, [
+            _c("div", { staticClass: "modal-content" }, [
+              _c("div", { staticClass: "modal-header" }, [
+                _c("h4", { staticClass: "modal-title" }, [
+                  _vm._v("Kliento registracijos forma")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "close",
+                    attrs: { type: "button", "data-dismiss": "modal" }
+                  },
+                  [_vm._v("×")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-body" }, [
+                _c("form", { staticClass: "form-control" }, [
+                  _c("fieldset", [
+                    _c("legend", [_vm._v("Prisijungimo duomenys")]),
+                    _vm._v(" "),
+                    _c("label", { attrs: { for: "email" } }, [
+                      _vm._v("El. paštas"),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: {
+                          name: "email",
+                          type: "email",
+                          placeholder: "Įveskite el. paštą"
+                        }
+                      })
+                    ]),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("label", { attrs: { for: "password" } }, [
+                      _vm._v("Slaptažodis"),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: {
+                          name: "password",
+                          type: "password",
+                          placeholder: "Įveskite slaptažodį"
+                        }
+                      })
+                    ]),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("label", { attrs: { for: "password" } }, [
+                      _vm._v("Pakartokite slaptažodį"),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: {
+                          name: "password",
+                          type: "password",
+                          placeholder: "Pakartokite slaptažodį"
+                        }
+                      })
+                    ]),
+                    _c("br")
+                  ]),
+                  _vm._v(" "),
+                  _c("fieldset", [
+                    _c("legend", [_vm._v("Kontaktiniai duomenys")]),
+                    _vm._v(" "),
+                    _c("label", { attrs: { for: "fname" } }, [
+                      _vm._v("Vardas"),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { name: "fname", type: "text", placeholder: "" }
+                      })
+                    ]),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("label", { attrs: { for: "lname" } }, [
+                      _vm._v("Pavardė"),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { name: "lname", type: "text", placeholder: "" }
+                      })
+                    ]),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("label", { attrs: { for: "city" } }, [
+                      _vm._v("Miestas"),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { name: "city", type: "text", placeholder: "" }
+                      })
+                    ]),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("label", { attrs: { for: "phone" } }, [
+                      _vm._v("Tel. Nr."),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { name: "phone", type: "text", placeholder: "" }
+                      })
+                    ]),
+                    _c("br")
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-footer" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-info btn-lg",
+                    attrs: { type: "submit" }
+                  },
+                  [_vm._v("Registruotis")]
+                )
+              ])
+            ])
+          ])
+        ]
       ),
       _vm._v(" "),
-      _c("ul", { staticClass: "dropdown-menu" }, [
-        _c("li", [
-          _c(
-            "button",
-            {
-              staticClass: "btn btn-info btn-lg",
-              attrs: {
-                type: "button",
-                "data-toggle": "modal",
-                "data-target": "#regUser"
-              }
-            },
-            [_vm._v("Registracija vartotojui")]
-          )
-        ]),
-        _vm._v(" "),
-        _c("li", [
-          _c(
-            "button",
-            {
-              staticClass: "btn btn-info btn-lg",
-              attrs: {
-                type: "button",
-                "data-toggle": "modal",
-                "data-target": "#regCompany"
-              }
-            },
-            [_vm._v("Registracija įmonei")]
-          )
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "login-right" }, [
       _c(
-        "button",
+        "div",
         {
-          staticClass: "btn btn-info btn-lg",
-          attrs: {
-            type: "button",
-            "data-toggle": "modal",
-            "data-target": "#login"
-          }
+          staticClass: "modal fade",
+          attrs: { id: "regCompany", role: "dialog" }
         },
-        [_vm._v("Prisijungti")]
+        [
+          _c("div", { staticClass: "modal-dialog" }, [
+            _c("div", { staticClass: "modal-content" }, [
+              _c("div", { staticClass: "modal-header" }, [
+                _c("h4", { staticClass: "modal-title" }, [
+                  _vm._v("Įmonės registracijos forma")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "close",
+                    attrs: { type: "button", "data-dismiss": "modal" }
+                  },
+                  [_vm._v("×")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-body" }, [
+                _c("form", { staticClass: "form-control" }, [
+                  _c("fieldset", [
+                    _c("legend", [_vm._v("Prisijungimo duomenys")]),
+                    _vm._v(" "),
+                    _c("label", { attrs: { for: "email" } }, [
+                      _vm._v("El. paštas"),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: {
+                          name: "email",
+                          type: "email",
+                          placeholder: "Įveskite el. paštą"
+                        }
+                      })
+                    ]),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("label", { attrs: { for: "password" } }, [
+                      _vm._v("Slaptažodis"),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: {
+                          name: "password",
+                          type: "password",
+                          placeholder: "Įveskite slaptažodį"
+                        }
+                      })
+                    ]),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("label", { attrs: { for: "password" } }, [
+                      _vm._v("Pakartokite slaptažodį"),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: {
+                          name: "password",
+                          type: "password",
+                          placeholder: "Pakartokite slaptažodį"
+                        }
+                      })
+                    ]),
+                    _c("br")
+                  ]),
+                  _vm._v(" "),
+                  _c("fieldset", [
+                    _c("legend", [_vm._v("Kontaktiniai duomenys")]),
+                    _vm._v(" "),
+                    _c("label", { attrs: { for: "company_name" } }, [
+                      _vm._v("Įmonės pavadinimas"),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: {
+                          name: "company_name",
+                          type: "text",
+                          placeholder: ""
+                        }
+                      })
+                    ]),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("label", { attrs: { for: "city" } }, [
+                      _vm._v("Miestas"),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { name: "city", type: "text", placeholder: "" }
+                      })
+                    ]),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("label", { attrs: { for: "phone" } }, [
+                      _vm._v("Tel. Nr."),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("input", {
+                        attrs: { name: "phone", type: "text", placeholder: "" }
+                      })
+                    ]),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("label", { attrs: { for: "description" } }, [
+                      _vm._v("Įmonės aprašymas"),
+                      _c("br"),
+                      _vm._v(" "),
+                      _c("textarea", {
+                        attrs: {
+                          name: "phone",
+                          type: "text",
+                          placeholder: "Čia galite trumpai aprašyti įmonę..."
+                        }
+                      })
+                    ]),
+                    _c("br")
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-footer" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-info btn-lg",
+                    attrs: { type: "submit" }
+                  },
+                  [_vm._v("Registruotis")]
+                )
+              ])
+            ])
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "modal fade", attrs: { id: "login", role: "dialog" } },
+        [
+          _c("div", { staticClass: "modal-dialog" }, [
+            _c("div", { staticClass: "modal-content" }, [
+              _c("div", { staticClass: "modal-header" }, [
+                _c("h4", { staticClass: "modal-title" }, [
+                  _vm._v("Prisijungimas")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "button",
+                  {
+                    staticClass: "close",
+                    attrs: { type: "button", "data-dismiss": "modal" }
+                  },
+                  [_vm._v("×")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-body" }, [
+                _c("form", { staticClass: "form-control" }, [
+                  _c("label", { attrs: { for: "email" } }, [
+                    _vm._v("El. paštas"),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("input", {
+                      attrs: {
+                        id: "email",
+                        type: "email",
+                        placeholder: "Įveskite el. paštą"
+                      }
+                    })
+                  ]),
+                  _c("br"),
+                  _vm._v(" "),
+                  _c("label", { attrs: { for: "password" } }, [
+                    _vm._v("Slaptažodis"),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("input", {
+                      attrs: {
+                        id: "password",
+                        type: "password",
+                        placeholder: "Įveskite slaptažodį"
+                      }
+                    })
+                  ]),
+                  _c("br")
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "modal-footer" }, [
+                _c(
+                  "button",
+                  {
+                    staticClass: "btn btn-info btn-lg",
+                    attrs: { type: "submit" }
+                  },
+                  [_vm._v("Prisijungti")]
+                )
+              ])
+            ])
+          ])
+        ]
       )
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "modal fade", attrs: { id: "regUser", role: "dialog" } },
-      [
-        _c("div", { staticClass: "modal-dialog" }, [
-          _c("div", { staticClass: "modal-content" }, [
-            _c("div", { staticClass: "modal-header" }, [
-              _c("h4", { staticClass: "modal-title" }, [
-                _vm._v("Kliento registracijos forma")
-              ]),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "close",
-                  attrs: { type: "button", "data-dismiss": "modal" }
-                },
-                [_vm._v("×")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "modal-body" }, [
-              _c("form", { staticClass: "form-control" }, [
-                _c("fieldset", [
-                  _c("legend", [_vm._v("Prisijungimo duomenys")]),
-                  _vm._v(" "),
-                  _c("label", { attrs: { for: "email" } }, [
-                    _vm._v("El. paštas"),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("input", {
-                      attrs: {
-                        name: "email",
-                        type: "email",
-                        placeholder: "Įveskite el. paštą"
-                      }
-                    })
-                  ]),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("label", { attrs: { for: "password" } }, [
-                    _vm._v("Slaptažodis"),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("input", {
-                      attrs: {
-                        name: "password",
-                        type: "password",
-                        placeholder: "Įveskite slaptažodį"
-                      }
-                    })
-                  ]),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("label", { attrs: { for: "password" } }, [
-                    _vm._v("Pakartokite slaptažodį"),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("input", {
-                      attrs: {
-                        name: "password",
-                        type: "password",
-                        placeholder: "Pakartokite slaptažodį"
-                      }
-                    })
-                  ]),
-                  _c("br")
-                ]),
-                _vm._v(" "),
-                _c("fieldset", [
-                  _c("legend", [_vm._v("Kontaktiniai duomenys")]),
-                  _vm._v(" "),
-                  _c("label", { attrs: { for: "fname" } }, [
-                    _vm._v("Vardas"),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("input", {
-                      attrs: { name: "fname", type: "text", placeholder: "" }
-                    })
-                  ]),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("label", { attrs: { for: "lname" } }, [
-                    _vm._v("Pavardė"),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("input", {
-                      attrs: { name: "lname", type: "text", placeholder: "" }
-                    })
-                  ]),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("label", { attrs: { for: "city" } }, [
-                    _vm._v("Miestas"),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("input", {
-                      attrs: { name: "city", type: "text", placeholder: "" }
-                    })
-                  ]),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("label", { attrs: { for: "phone" } }, [
-                    _vm._v("Tel. Nr."),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("input", {
-                      attrs: { name: "phone", type: "text", placeholder: "" }
-                    })
-                  ]),
-                  _c("br")
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "modal-footer" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-info btn-lg",
-                  attrs: { type: "submit" }
-                },
-                [_vm._v("Registruotis")]
-              )
-            ])
-          ])
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "modal fade",
-        attrs: { id: "regCompany", role: "dialog" }
-      },
-      [
-        _c("div", { staticClass: "modal-dialog" }, [
-          _c("div", { staticClass: "modal-content" }, [
-            _c("div", { staticClass: "modal-header" }, [
-              _c("h4", { staticClass: "modal-title" }, [
-                _vm._v("Įmonės registracijos forma")
-              ]),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "close",
-                  attrs: { type: "button", "data-dismiss": "modal" }
-                },
-                [_vm._v("×")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "modal-body" }, [
-              _c("form", { staticClass: "form-control" }, [
-                _c("fieldset", [
-                  _c("legend", [_vm._v("Prisijungimo duomenys")]),
-                  _vm._v(" "),
-                  _c("label", { attrs: { for: "email" } }, [
-                    _vm._v("El. paštas"),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("input", {
-                      attrs: {
-                        name: "email",
-                        type: "email",
-                        placeholder: "Įveskite el. paštą"
-                      }
-                    })
-                  ]),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("label", { attrs: { for: "password" } }, [
-                    _vm._v("Slaptažodis"),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("input", {
-                      attrs: {
-                        name: "password",
-                        type: "password",
-                        placeholder: "Įveskite slaptažodį"
-                      }
-                    })
-                  ]),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("label", { attrs: { for: "password" } }, [
-                    _vm._v("Pakartokite slaptažodį"),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("input", {
-                      attrs: {
-                        name: "password",
-                        type: "password",
-                        placeholder: "Pakartokite slaptažodį"
-                      }
-                    })
-                  ]),
-                  _c("br")
-                ]),
-                _vm._v(" "),
-                _c("fieldset", [
-                  _c("legend", [_vm._v("Kontaktiniai duomenys")]),
-                  _vm._v(" "),
-                  _c("label", { attrs: { for: "company_name" } }, [
-                    _vm._v("Įmonės pavadinimas"),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("input", {
-                      attrs: {
-                        name: "company_name",
-                        type: "text",
-                        placeholder: ""
-                      }
-                    })
-                  ]),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("label", { attrs: { for: "city" } }, [
-                    _vm._v("Miestas"),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("input", {
-                      attrs: { name: "city", type: "text", placeholder: "" }
-                    })
-                  ]),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("label", { attrs: { for: "phone" } }, [
-                    _vm._v("Tel. Nr."),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("input", {
-                      attrs: { name: "phone", type: "text", placeholder: "" }
-                    })
-                  ]),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("label", { attrs: { for: "description" } }, [
-                    _vm._v("Įmonės aprašymas"),
-                    _c("br"),
-                    _vm._v(" "),
-                    _c("textarea", {
-                      attrs: {
-                        name: "phone",
-                        type: "text",
-                        placeholder: "Čia galite trumpai aprašyti įmonę..."
-                      }
-                    })
-                  ]),
-                  _c("br")
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "modal-footer" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-info btn-lg",
-                  attrs: { type: "submit" }
-                },
-                [_vm._v("Registruotis")]
-              )
-            ])
-          ])
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "modal fade", attrs: { id: "login", role: "dialog" } },
-      [
-        _c("div", { staticClass: "modal-dialog" }, [
-          _c("div", { staticClass: "modal-content" }, [
-            _c("div", { staticClass: "modal-header" }, [
-              _c("h4", { staticClass: "modal-title" }, [
-                _vm._v("Prisijungimas")
-              ]),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "close",
-                  attrs: { type: "button", "data-dismiss": "modal" }
-                },
-                [_vm._v("×")]
-              )
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "modal-body" }, [
-              _c("form", { staticClass: "form-control" }, [
-                _c("label", { attrs: { for: "email" } }, [
-                  _vm._v("El. paštas"),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("input", {
-                    attrs: {
-                      id: "email",
-                      type: "email",
-                      placeholder: "Įveskite el. paštą"
-                    }
-                  })
-                ]),
-                _c("br"),
-                _vm._v(" "),
-                _c("label", { attrs: { for: "password" } }, [
-                  _vm._v("Slaptažodis"),
-                  _c("br"),
-                  _vm._v(" "),
-                  _c("input", {
-                    attrs: {
-                      id: "password",
-                      type: "password",
-                      placeholder: "Įveskite slaptažodį"
-                    }
-                  })
-                ]),
-                _c("br")
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "modal-footer" }, [
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-info btn-lg",
-                  attrs: { type: "submit" }
-                },
-                [_vm._v("Prisijungti")]
-              )
-            ])
-          ])
-        ])
-      ]
-    )
   }
 ]
 render._withStripped = true
@@ -49679,7 +49657,12 @@ if (false) {
 }
 
 /***/ }),
-/* 73 */
+/* 73 */,
+/* 74 */,
+/* 75 */,
+/* 76 */,
+/* 77 */,
+/* 78 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

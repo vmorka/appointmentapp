@@ -1,5 +1,6 @@
 <template>
     <div class="mano">
+      <reg-login></reg-login>
       <h1 class="center">Appointment App</h1>
 
 
@@ -122,7 +123,7 @@
 }
 
 .btn-lg {
-  width: 150px;
+  width: 200px;
 }
 
 .modal-content .btn-lg {
