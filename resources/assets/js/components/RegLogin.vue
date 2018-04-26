@@ -135,16 +135,29 @@
 <script>
 </script>
 
-<style>
+<style scoped>
+.dropdown-menu {
+  padding: 0;
+  background-color: #17a2b8;
+}
+
 .reg-right {
   position: absolute;
   right: 170px;
   top: 20px;
 }
 
+.modal-footer {
+  justify-content: center;
+}
+
 .login-right {
   position: absolute;
   right: 50px;
   top: 20px;
+}
+
+.btn-lg {
+  width: 100%;
 }
 </style>

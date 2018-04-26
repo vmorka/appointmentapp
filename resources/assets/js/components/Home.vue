@@ -1,6 +1,6 @@
-  <template>
+<template>
     <div class="mano">
-      <h2 class="center">Appointment App</h2>
+      <h1 class="center">Appointment App</h1>
 
 
 <div class="mano">
@@ -16,17 +16,17 @@
       </div>
       <div class="modal-body">
         <div class="checkbox">
-            <label><input type="checkbox" value="">Panevėžys</label>
+            <label><input type="checkbox" value=""> Panevėžys</label>
             </div>
             <div class="checkbox">
-            <label><input type="checkbox" value="">Kaunas</label>
+            <label><input type="checkbox" value=""> Kaunas</label>
             </div>
             <div class="checkbox">
-            <label><input type="checkbox" value="" >Vilnius</label>
+            <label><input type="checkbox" value="" > Vilnius</label>
             </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Ieškoti</button>
+        <button type="button" class="btn btn-info btn-lg" data-dismiss="modal">Ieškoti</button>
       </div>
     </div>
   </div>
@@ -44,17 +44,17 @@
       </div>
       <div class="modal-body">
         <div class="checkbox">
-            <label><input type="checkbox" value="">Odontologija</label>
+            <label><input type="checkbox" value=""> Odontologija</label>
             </div>
             <div class="checkbox">
-            <label><input type="checkbox" value="">Manikiūras</label>
+            <label><input type="checkbox" value=""> Manikiūras</label>
             </div>
             <div class="checkbox">
-            <label><input type="checkbox" value="" >Masažas</label>
+            <label><input type="checkbox" value="" > Masažas</label>
             </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Ieškoti</button>
+        <button type="button" class="btn btn-info btn-lg" data-dismiss="modal">Ieškoti</button>
       </div>
     </div>
   </div>
@@ -72,17 +72,17 @@
       </div>
       <div class="modal-body">
         <div class="checkbox">
-            <label><input type="checkbox" value="">Odontologas</label>
+            <label><input type="checkbox" value=""> Odontologas</label>
             </div>
             <div class="checkbox">
-            <label><input type="checkbox" value="">Visažistė</label>
+            <label><input type="checkbox" value=""> Visažistė</label>
             </div>
             <div class="checkbox">
-            <label><input type="checkbox" value="" >Masažistas</label>
+            <label><input type="checkbox" value="" > Masažistas</label>
             </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Ieškoti</button>
+        <button type="button" class="btn btn-info btn-lg" data-dismiss="modal">Ieškoti</button>
       </div>
     </div>
   </div>
@@ -98,15 +98,12 @@
       </table>
     </div>
   </div>
-  </template>
-
-
-
+</template>
 
 <script>
- </script>
+</script>
 
-<style>
+<style scoped>
 .center {
     margin: auto;
     width: 50%;
@@ -115,12 +112,20 @@
     text-align: center;
 }
 
-th {
-  border-top: none;
+.table, th {
+  border: none;
   text-align: center;
 }
 
 .mano {
   padding-top: 100px;
+}
+
+.btn-lg {
+  width: 100%;
+}
+
+.modal-footer {
+  justify-content: center;
 }
 </style>

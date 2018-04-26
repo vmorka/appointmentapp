@@ -1937,7 +1937,7 @@ pre code {
 .table td {
   padding: 0.75rem;
   vertical-align: top;
-  border: none;
+  border-top: 1px solid #dee2e6;
 }
 
 .table thead th {
@@ -3616,14 +3616,15 @@ input[type="button"].btn-block {
   display: none;
   float: left;
   min-width: 10rem;
-  padding: 0;
+  padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 0.9rem;
   color: #212529;
   text-align: left;
   list-style: none;
-  background-color: #17a2b8;
+  background-color: #fff;
   background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
 }
 
@@ -10392,3 +10393,4 @@ a.text-dark:focus {
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
